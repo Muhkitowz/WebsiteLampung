@@ -1,0 +1,187 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&family=Quicksand:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.padding-x {
+  padding-left: 3%;
+  padding-right: 3%;
+}
+
+body {
+  font-family: "Open sans";
+}
+
+header {
+  display: inline;
+}
+
+footer {
+  padding: 20px;
+  color: white;
+  background-color: #9fc777;
+  text-align: center;
+  font-weight: bold;
+}
+
+.mid {
+  display: grid;
+  place-content: center;
+  font-size: 30px;
+  padding: 60px;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  background-image: url("../image/siger.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 60vh;
+  opacity: 1;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  background-color: #9fc777;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+nav a {
+  display: block;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav a:hover {
+  font-weight: 600;
+}
+
+/* ini untuk background color navbar */
+nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+/* Mengatur list navbar */
+nav li {
+  list-style-type: none;
+}
+
+.logo {
+  margin-right: 1.3rem;
+}
+
+.logo img {
+  width: 35px;
+  height: auto;
+}
+
+main {
+  margin-top: 2rem;
+}
+
+.profile header {
+  text-align: center;
+}
+
+.featuredImage {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.grid {
+  box-shadow: 0 2px 8px 2px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  padding: 20px;
+
+  padding: 20px;
+  margin-top: 20px;
+}
+.awal {
+  list-style-type: none;
+}
+.sublist {
+  padding-right: 1rem;
+}
+
+main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#mainContent {
+  width: 75%;
+}
+
+aside {
+  width: 22%;
+}
+
+.profile img {
+  width: 200px;
+}
+
+.profile header {
+  text-align: center;
+}
+
+#pimpinan h3 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+#pimpinan h5 {
+  margin-top: 1rem;
+  margin-bottom: 0.625rem;
+}
+
+.con-biodata {
+  display: flex;
+  flex-direction: row;
+}
+
+.con-biodata ul.sublist {
+  padding-left: 1rem;
+}
+
+aside h3 {
+  text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+  #mainContent,
+  aside {
+    width: 100%;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1200px) {
+  main {
+    flex-flow: column nowrap;
+  }
+  main aside {
+    align-self: center;
+  }
+}
+@media screen and (max-width: 768px) {
+  nav ul {
+    justify-content: center;
+  }
+
+  main aside {
+    align-self: stretch;
+  }
+}
